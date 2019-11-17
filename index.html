@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+	<link href="css/customized_css.css" rel="stylesheet">
+	
+  </head>
+  <body>
+  	<!-- body code goes here -->
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	<div class="container">
+	  <a class="navbar-brand" href="#">Start Bootstrap</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+	  <div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+		  <li class="nav-item active">
+			<a class="nav-link" href="#">Home
+				  <span class="sr-only">(current)</span>
+				</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">About</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Services</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Contact</a>
+		  </li>
+		</ul>
+	  </div>
+	</div>
+	<div id="webapp_cover">
+		<div id="menu_button">
+		  <input type="checkbox" id="menu_checkbox">
+		  <label for="menu_checkbox" id="menu_label">
+			<div id="menu_text_bar"></div>
+		  </label>
+		</div>
+	  </div>
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	  <div class="container">
+		  <br/>
+		  <div class="row justify-content-center">
+							  <div class="col-12 col-md-10 col-lg-8">
+								  <form class="card card-sm">
+									  <div class="card-body row no-gutters align-items-center">
+										  <div class="col-auto">
+											  <i class="fas fa-search h4 text-body"></i>
+										  </div>
+										  <!--end of col-->
+										  <div class="col">
+											  <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search topics or keywords">
+										  </div>
+										  <!--end of col-->
+										  <div class="col-auto">
+											  <button class="btn btn-lg btn-success" type="submit">Search</button>
+										  </div>
+										  <!--end of col-->
+									  </div>
+								  </form>
+							  </div>
+							  <!--end of col-->
+						  </div>
+	  </div>
+  </nav>
+  <!--delivery nextday switch-->
+  <input type="checkbox" checked data-toggle="toggle">
+    <!--delivery nextday switch-->
+  <header>
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+	  <ol class="carousel-indicators">
+		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	  </ol>
+	  <div class="carousel-inner" role="listbox">
+		<!-- Slide One - Set the background image for this slide in the line below -->
+		<div class="carousel-item active" style="background-image: url('https://source.unsplash.com/RCAhiGJsUUE/1920x1080')">
+		  <div class="carousel-caption d-none d-md-block">
+			<h3 class="display-4">First Slide</h3>
+			<p class="lead">This is a description for the first slide.</p>
+		  </div>
+		</div>
+		<!-- Slide Two - Set the background image for this slide in the line below -->
+		<div class="carousel-item" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1920x1080')">
+		  <div class="carousel-caption d-none d-md-block">
+			<h3 class="display-4">Second Slide</h3>
+			<p class="lead">This is a description for the second slide.</p>
+		  </div>
+		</div>
+		<!-- Slide Three - Set the background image for this slide in the line below -->
+		<div class="carousel-item" style="background-image: url('https://source.unsplash.com/O7fzqFEfLlo/1920x1080')">
+		  <div class="carousel-caption d-none d-md-block">
+			<h3 class="display-4">Third Slide</h3>
+			<p class="lead">This is a description for the third slide.</p>
+		  </div>
+		</div>
+	  </div>
+	  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		  </a>
+	  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		  </a>
+	</div>
+  </header>
+  
+  <!-- Page Content -->
+  <section class="py-5">
+	<div class="container">
+	  <h1 class="font-weight-light">Half Page Image Slider</h1>
+	</div>
+  </section>
+  <!--card-->
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Movies
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Edit</a>
+              <a class="dropdown-item" href="#">Edit</a>
+              <a class="dropdown-item" href="#">Edit</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Series
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Edit</a>
+              <a class="dropdown-item" href="#">Edit</a>
+              <a class="dropdown-item" href="#">Edit</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search...">
+          <button class="btn btn-success my-2 my-sm-0" type="button"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+  </div>
+</header>
+<main class="container">
+<section class="movies" id="movies">
+    <h2>Featured Movies</h2>
+	<div class="row">
+		<div class="col-lg-3 col-md-4 col-sm-6">
+			<article class="card">
+				<header class="title-header">
+					<h3>Movie Title</h3>
+				</header>
+				<div class="card-block">
+					<div class="img-card">
+						<img src="//placehold.it/300x250" alt="Movie" class="w-100" />
+					</div>
+					<p class="tagline card-text text-xs-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					<a href="#" class="btn btn-primary btn-block"><i class="fa fa-eye"></i> Watch Now</a>
+				</div>
+			</article>
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-6">
+    		<article class="card">
+				<header class="title-header">
+					<h3>Movie Title</h3>
+				</header>
+				<div class="card-block">
+					<div class="img-card">
+						<img src="https://placehold.it/300x250" alt="Movie" class="w-100" />
+					</div>
+					<p class="tagline card-text text-xs-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					<a href="#" class="btn btn-primary btn-block"><i class="fa fa-eye"></i> Watch Now</a>
+				</div>
+			</article>
+		</div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+    		<article class="card">
+				<header class="title-header">
+					<h3>Movie Title</h3>
+				</header>
+				<div class="card-block">
+					<div class="img-card">
+						<img src="https://placehold.it/300x250" alt="Movie" class="w-100" />
+					</div>
+					<p class="tagline card-text text-xs-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					<a href="#" class="btn btn-primary btn-block"><i class="fa fa-eye"></i> Watch Now</a>
+				</div>
+			</article>
+		</div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+    		<article class="card">
+				<header class="title-header">
+					<h3>Movie Title</h3>
+				</header>
+				<div class="card-block">
+					<div class="img-card">
+						<img src="https://placehold.it/300x250" alt="Movie" title="Movie" class="w-100" />
+					</div>
+					<p class="tagline card-text text-xs-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					<a href="#" class="btn btn-primary btn-block"><i class="fa fa-eye"></i> Watch Now</a>
+				</div>
+			</article>
+		</div>
+	</div>
+</section>
+</main>
+  <!--card-->
+  <!--trendy category-->
+  <section class="our-webcoderskull padding-lg">
+	<div class="container">
+	  <div class="row heading heading-icon">
+		  <h2>Our Team</h2>
+	  </div>
+	  <ul class="row">
+		<li class="col-12 col-md-6 col-lg-3">
+			<div class="cnt-block equal-hight" style="height: 349px;">
+			  <figure><img src="http://www.webcoderskull.com/img/team4.png" class="img-responsive" alt=""></figure>
+			  <h3><a href="http://www.webcoderskull.com/">Web coder skull</a></h3>
+			  <p>Freelance Web Developer</p>
+			  <ul class="follow-us clearfix">
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			  </ul>
+			</div>
+		</li>
+		<li class="col-12 col-md-6 col-lg-3">
+			<div class="cnt-block equal-hight" style="height: 349px;">
+			  <figure><img src="http://www.webcoderskull.com/img/team1.png" class="img-responsive" alt=""></figure>
+			  <h3><a href="#">Kappua </a></h3>
+			  <p>Freelance Web Developer</p>
+			  <ul class="follow-us clearfix">
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			  </ul>
+			</div>
+		</li>
+		<li class="col-12 col-md-6 col-lg-3">
+			<div class="cnt-block equal-hight" style="height: 349px;">
+			  <figure><img src="http://www.webcoderskull.com/img/team4.png" class="img-responsive" alt=""></figure>
+			  <h3><a href="http://www.webcoderskull.com/">Manish </a></h3>
+			  <p>Freelance Web Developer</p>
+			  <ul class="follow-us clearfix">
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			  </ul>
+			</div>
+		 </li>
+		<li class="col-12 col-md-6 col-lg-3">
+			<div class="cnt-block equal-hight" style="height: 349px;">
+			  <figure><img src="http://www.webcoderskull.com/img/team2.png" class="img-responsive" alt=""></figure>
+			  <h3><a href="http://www.webcoderskull.com/">Atul </a></h3>
+			  <p>Freelance Web Developer</p>
+			  <ul class="follow-us clearfix">
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			  </ul>
+			</div>
+		</li>
+	  </ul>
+	</div>
+  </section>
+  <!--trendy category-->
+  <!-- Footer -->
+	<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				</hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p><u><a href="https://www.nationaltransaction.com/">National Transaction Corporation</a></u> is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
+					<p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Sunlimetech</a></p>
+				</div>
+				</hr>
+			</div>	
+		</div>
+	</section>
+	<!-- ./Footer -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.3.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.3.1.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+</body>
+</html>
