@@ -43,3 +43,14 @@ input:checked + .slider {
     box-shadow:0 0 0 2px limeGreen,0 0 2px limeGreen;
 }
 /*next day delivery*/
+/*flex rectangle*/
+.flex-rectangle{
+    width: 25%;
+    background: #E5A743;
+}
+.flex-rectangle:before{
+    content: "trendy category";
+    display: block;
+    padding-top: 10%;
+}
+/*flex rectangle*/
