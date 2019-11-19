@@ -51,6 +51,5 @@ input:checked + .slider {
 .flex-rectangle:before{
     content: "trendy category";
     display: block;
-    padding-top: 10%;
 }
 /*flex rectangle*/
