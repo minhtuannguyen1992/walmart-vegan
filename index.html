@@ -15,6 +15,10 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--navbar cart drop down-->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!--customized-->
 	<link href="css/customized_css.css" rel="stylesheet">
 	
@@ -62,10 +66,74 @@
 							<img src="img/user.png" alt="user">
 							<P>Sign Up</P>
 					</div>
-					<div class="col-sm=1"style="padding-bottom: 30px;">
-							<img src="img/shopping-cart-1.png" alt="shopping cart" style="padding-bottom: 30px;"> 
-							<p>Cart</P>
-					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+						  <li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <span class="glyphicon glyphicon-shopping-cart"></span> 7 - Items<span class="caret"></span></a>
+							<ul class="dropdown-menu dropdown-cart" role="menu">
+								<li>
+									<span class="item">
+									  <span class="item-left">
+										  <img src="http://lorempixel.com/50/50/" alt="" />
+										  <span class="item-info">
+											  <span>Item name</span>
+											  <span>23$</span>
+										  </span>
+									  </span>
+									  <span class="item-right">
+										  <button class="btn btn-xs btn-danger pull-right">x</button>
+									  </span>
+								  </span>
+								</li>
+								<li>
+									<span class="item">
+									  <span class="item-left">
+										  <img src="http://lorempixel.com/50/50/" alt="" />
+										  <span class="item-info">
+											  <span>Item name</span>
+											  <span>23$</span>
+										  </span>
+									  </span>
+									  <span class="item-right">
+										  <button class="btn btn-xs btn-danger pull-right">x</button>
+									  </span>
+								  </span>
+								</li>
+								<li>
+									<span class="item">
+									  <span class="item-left">
+										  <img src="http://lorempixel.com/50/50/" alt="" />
+										  <span class="item-info">
+											  <span>Item name</span>
+											  <span>23$</span>
+										  </span>
+									  </span>
+									  <span class="item-right">
+										  <button class="btn btn-xs btn-danger pull-right">x</button>
+									  </span>
+								  </span>
+								</li>
+								<li>
+									<span class="item">
+									  <span class="item-left">
+										  <img src="http://lorempixel.com/50/50/" alt="" />
+										  <span class="item-info">
+											  <span>Item name</span>
+											  <span>23$</span>
+										  </span>
+									  </span>
+									  <span class="item-right">
+										  <button class="btn btn-xs btn-danger pull-right">x</button>
+									  </span>
+								  </span>
+								</li>
+								<li class="divider"></li>
+								<li><a class="text-center" href="">View Cart</a></li>
+							</ul>
+						  </li>
+						</ul>
+					  </div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
 				</div>	
 			</div>
 		</div>
