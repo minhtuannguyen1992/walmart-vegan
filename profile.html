@@ -19,20 +19,21 @@
   <body>
   	<!-- body code goes here -->
       <div class="container">
-          <div class="bread-crumb">
-                <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="#">Home</a></li>
-                          <li class="breadcrumb-item"><a href="#">Library</a></li>
-                          <li class="breadcrumb-item active">Data</li>
+        <div class="row bread-crumb float-right">
+                <nav aria-label="breadcrumb" style="margin-top:100px;">
+                        <ol class="breadcrumb float-right">
+                          <li class="breadcrumb-item active">Profile</li>
+                          <li class="breadcrumb-item"><a href="#">Verification question</a></li>
+                          <li class="breadcrumb-item"><a href="#">Add your favorite brand</a></li>
                         </ol>
-                      </nav>
-          </div>
-            <div class="profile-sign-up">
-              <div class="col-sm">
-                    <img src="img/Walmart_Logos_Wordmark_blu_rgb.png" class="rounded mx-auto d-block" alt="logo">
+                 </nav>
+        </div>
+        <div class="row col-sm profile-sign-up">
+              <div class="">
+                    <img src="img/Walmart_Logos_Wordmark_blu_rgb.png" class="rounded center-block img-fluid" alt="logo">
               </div>
-            <div>
+            </div>
+            <div class="row float-centre">
               <form class="form-horizontal" action='' method="POST">
                     <fieldset>
                       <div id="legend">
@@ -43,7 +44,7 @@
                         <label class="control-label"  for="username">Username</label>
                         <div class="controls">
                           <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
-                          <p class="help-block">Username can contain any letters or numbers, without spaces</p>
+                          
                         </div>
                       </div>
                    
@@ -52,7 +53,6 @@
                         <label class="control-label" for="email">E-mail</label>
                         <div class="controls">
                           <input type="text" id="email" name="email" placeholder="" class="input-xlarge">
-                          <p class="help-block">Please provide your E-mail</p>
                         </div>
                       </div>
                    
@@ -61,23 +61,21 @@
                         <label class="control-label" for="password">Password</label>
                         <div class="controls">
                           <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
-                          <p class="help-block">Password should be at least 4 characters</p>
                         </div>
                       </div>
                    
                       <div class="control-group">
                         <!-- Password -->
-                        <label class="control-label"  for="password_confirm">Password (Confirm)</label>
+                        <label class="control-label"  for="password_confirm">Confirmation Password</label>
                         <div class="controls">
                           <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge">
-                          <p class="help-block">Please confirm password</p>
                         </div>
                       </div>
                    
                       <div class="control-group">
                         <!-- Button -->
                         <div class="controls">
-                          <button class="btn btn-success">Register</button>
+                          <button class="btn btn-success">Next</button>
                         </div>
                       </div>
                     </fieldset>

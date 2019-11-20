@@ -260,3 +260,35 @@ ul.dropdown-cart li .item-right button{
 	height: auto;
 }
 /*hamburger*/
+/*centre block*/
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+/*centre block*/
+.hungry .selection {
+    margin-bottom: 1em;
+  }
+  
+  .hungry .selection label {
+    display: inline-block;
+    width:8em;
+    background-color: #42b4d6;
+    border-radius: 6px;
+    color: #ffffff;
+    padding: 0.5em;
+    cursor: pointer;
+  }
+  
+  .hungry .selection label:hover {
+    background-color: #5fc0dc;
+  }
+  
+  .hungry .selection input[type=radio] {
+    display: none;
+  }
+  
+  .hungry .selection input[type=radio]:checked ~ label {
+    background-color: #f1592a;
+  }
