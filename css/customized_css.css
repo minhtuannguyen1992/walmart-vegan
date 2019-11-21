@@ -49,9 +49,18 @@ input:checked + .slider {
     background: #E5A743;
 }
 .flex-rectangle:before{
-    content: "trendy category";
     display: block;
 }
+.flex-rectangle-trendy {
+    width: 40%;
+    background: #E5A743;
+    height: 60px;
+}
+.trendy-text {
+    font-weight: 500;
+    /*text-shadow: 1px 1px 1px white;*/
+}
+
 /*flex rectangle*/
 /*ecommerce carousel*/
 body {
