@@ -18,81 +18,102 @@
   </head>
   <body>
   	<!-- body code goes here -->
-      <div class="container">
-          <div class="bread-crumb">
-                <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="#">Home</a></li>
-                          <li class="breadcrumb-item"><a href="#">Library</a></li>
-                          <li class="breadcrumb-item active">Data</li>
+    <div class="container">
+        <div class="row">
+          <div class= "col-sm-7"></div>
+          <div class= "col-sm-5">
+            <div class="bread-crumb">
+                <nav aria-label="breadcrumb" style="margin-top:100px;">
+                        <ol class="breadcrumb float-right">
+                          <li class="breadcrumb-item"><a href="#">Profile</a></li>
+                          <li class="breadcrumb-item"active>Security Questions</li>
+                          <li class="breadcrumb-item"><a href="#">Add your favorite brand</a></li>
                         </ol>
-                      </nav>
+                 </nav>
+            </div>
           </div>
-            <div class="profile-sign-up">
-              <div class="col-sm">
-                    <img src="img/Walmart_Logos_Wordmark_blu_rgb.png" class="rounded mx-auto d-block" alt="logo">
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+          </div>
+              <div class="col-sm-4">
+                <div class="text-center">
+                    <img src="img/Walmart_Logos_Wordmark_blu_rgb.png" class="rounded center-block img-fluid" alt="logo">
+                    <legend class="">Choose your security questions</legend>
               </div>
-            <div>
-              <form class="form-horizontal" action='' method="POST">
-                    <fieldset>
-                      <div id="legend">
-                        <legend class="">sign up</legend>
-                      </div>
+              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+            <!--form-->
+            <div class="row">
+                <div class="col-sm-4">
+                  </div>
+              <div class="col-sm-4">
+                  <div>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Your first security question</option>
+                          <option>what's your mother maiden name?</option>
+                          <option>what's your secondary school?</option>
+                          <option>what's the name of your first pet?</option>
+                          <option>what's the model of your first car? </option>
+                          <option>what's the name of your city?</option>
+                        </select>
+                    </div>
                       <div class="control-group">
-                        <div>
+                        <!-- Username -->
+                        <label class="control-label"  for="username"></label>
+                        <div class="controls">
+                          <input type="text" id="username" name="username" placeholder="First Name" class="input-xlarge" style="padding-top: 15px; padding-bottom:15px">                    
+                        </div>
+                      </div>
+                      <div>
                           <select class="form-control" id="exampleFormControlSelect1">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
+                              <option>Your second security question</option>
+                              <option>what's your mother maiden name?</option>
+                              <option>what's your secondary school?</option>
+                              <option>what's the name of your first pet?</option>
+                              <option>what's the model of your first car? </option>
+                              <option>what's the name of your city?</option>
                             </select>
                         </div>
-                        <!-- Username -->
-                        <label class="control-label"  for="username">Username</label>
-                        <div class="controls">
-                          <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
-                          <p class="help-block">Username can contain any letters or numbers, without spaces</p>
-                        </div>
-                      </div>
-                   
                       <div class="control-group">
                         <!-- E-mail -->
-                        <label class="control-label" for="email">E-mail</label>
+                        <label class="control-label" for="email"></label>
                         <div class="controls">
-                          <input type="text" id="email" name="email" placeholder="" class="input-xlarge">
-                          <p class="help-block">Please provide your E-mail</p>
+                          <input type="text" id="email" name="email" placeholder="Last Name" class="input-xlarge"style="padding-top: 15px; padding-bottom:15px">
                         </div>
                       </div>
-                   
+                      <div>
+                          <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Your third security question</option>
+                          <option>what's your mother maiden name?</option>
+                          <option>what's your secondary school?</option>
+                          <option>what's the name of your first pet?</option>
+                          <option>what's the model of your first car? </option>
+                          <option>what's the name of your city?</option>
+                            </select>
+                        </div>
                       <div class="control-group">
                         <!-- Password-->
-                        <label class="control-label" for="password">Password</label>
+                        <label class="control-label" for="password"></label>
                         <div class="controls">
-                          <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
-                          <p class="help-block">Password should be at least 4 characters</p>
+                          <input type="password" id="password" name="password" placeholder="Email Address" class="input-xlarge" style="padding-top: 15px; padding-bottom:15px">
                         </div>
                       </div>
-                   
-                      <div class="control-group">
-                        <!-- Password -->
-                        <label class="control-label"  for="password_confirm">Password (Confirm)</label>
-                        <div class="controls">
-                          <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge">
-                          <p class="help-block">Please confirm password</p>
-                        </div>
-                      </div>
-                   
+          
                       <div class="control-group">
                         <!-- Button -->
                         <div class="controls">
-                          <button class="btn btn-success">Register</button>
+                          <button class="btn btn-success btn-block">Next</button>
                         </div>
                       </div>
-                    </fieldset>
-                  </form>
+                    </div>
+                  <div class="col-sm-4">
+                    </div>
             </div>
           </div>
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 	<script src="js/jquery-3.3.1.min.js"></script>
 

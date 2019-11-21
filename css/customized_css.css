@@ -301,3 +301,6 @@ ul.dropdown-cart li .item-right button{
   .hungry .selection input[type=radio]:checked ~ label {
     background-color: #f1592a;
   }
+input{
+      width:100%!important;
+  }
