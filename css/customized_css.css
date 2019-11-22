@@ -339,4 +339,8 @@ input{
     border-radius: 4px;
     cursor: zoom-in;
 }
+.save-for-later{
+    text-align: center;
+}
+
 /*product details*/
