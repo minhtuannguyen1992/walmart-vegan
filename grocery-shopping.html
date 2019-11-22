@@ -1,140 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
+
+<head>
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Untitled Document</title>
-    <!-- Bootstrap -->
+	<title>Untitled Document</title>
+	<!-- Bootstrap -->
 	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 	<link href="css/customized_css.css" rel="stylesheet">
-	
-  </head>
-  <body>
-  	<!-- body code goes here -->
-	<div class="container">
-		<div class="row navbar">
-			<div class="col-sm=1">
-					<img src="img/Group 1.png" alt="logo">
-			</div>
-			<div class="col-sm=1">
-					<img src="img/hamburger.png" alt="hamburger">
-			</div>
-			<div class="col-sm">
-					<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8">
-								<form class="card card-sm">
-									<div class="card-body row no-gutters align-items-center">
-										<div class="col-auto">
-											<i class="fas fa-search h4 text-body"></i>
-										</div>
-										<!--end of col-->
-										<div class="col">
-											<input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search topics or keywords">
-										</div>
-										<!--end of col-->
-										<div class="col-auto">
-											<button class="btn btn-lg btn-success" type="submit">Search</button>
-										</div>
-										<!--end of col-->
-									</div>
-								</form>
-							</div>
-							<!--end of col-->
-						</div>
-			</div>
-			<div class="col-sm=2">
-				<div class=row>
-				<div class="col-sm=1"style="padding-bottom: 30px;">
-							<img src="img/location.png" alt="location"> 
-							<P>Store Locator</P>
-					</div>
-					<div class="col-sm=1"style="padding-bottom: 30px;">
-							<img src="img/user.png" alt="user">
-							<P>Sign Up</P>
-					</div>
-					<div class="col-sm=1"style="padding-bottom: 30px;">
-							<img src="img/shopping-cart-1.png" alt="shopping cart" style="padding-bottom: 30px;"> 
-							<p>Cart</P>
-					</div>
-				</div>	
-			</div>
-		</div>
-		<div class="row next-day-delivery" style="padding-bottom: 10px;">
-				<div="col-sm=12">
-						<div>
-								<label class="switch">
-									<input type="checkbox">
-									<span class="slider"></span>
-								</label>
-								Next Day Delivery
-							</div>
-				</div>
-		</div>
-		<div class="row hero">
-				<div class="col-sm">
-						<img src="img/hero.png" class="img-fluid" alt="heroboard"> 
-				</div>
-				<div class="col-sm">
-						<img src="img/grocery.png" class="img-fluid"alt="grocery"> 
-				</div>
-        </div>
-        <div class= "row product-carousel">
-        hidden product carousel
-        </div>
-		<div class="row trendy-category-tittle">
-				<div class="col-sm">
-					Featured Product
-				</div>
-			</div>
-            <div class="row hero">
-				<div class="col-sm">
-						<img src="img/hero.png" class="img-fluid" alt="heroboard"> 
-				</div>
-				<div class="col-sm">
-						<img src="img/grocery.png" class="img-fluid"alt="grocery"> 
-				</div>
-        </div>
-        <div class= "row product-carousel">
-        hidden product carousel
-        </div>
-		<div class="row footer">
-				<div class="col-sm">
-						<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8">
-									<form class="card card-sm">
-										<div class="card-body row no-gutters align-items-center">
-											<div class="col-auto">
-												<i class="fas fa-search h4 text-body"></i>
-											</div>
-											<!--end of col-->
-											<div class="col">
-												<input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search topics or keywords">
-											</div>
-											<!--end of col-->
-											<div class="col-auto">
-												<button class="btn btn-lg btn-success" type="submit">Search</button>
-											</div>
-											<!--end of col-->
-										</div>
-									</form>
-								</div>
-								<!--end of col-->
-							</div>
-				</div>
-				<div class="col-sm">
-					social media icon
-				</div>
-		</div>
-	</div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-	<script src="js/jquery-3.3.1.min.js"></script>
 
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/popper.min.js"></script> 
-	<script src="js/bootstrap-4.3.1.js"></script>
-	
+</head>
+
+<body>
+	<!-- body code goes here -->
+	<div class="container-fluid">
+		<div class="row navbar nav-background mb-0 mt-5 pt-5 pb-3 pl-5 ml-5 pr-5 mr-5">
+			<div class="col-sm-3">
+				<img class="float-left img-fluid" src="img/logo.png" alt="logo">
+			</div>
+			<div class="col-sm-5">
+				<form>
+					<div class="row no-gutters align-items-center">
+						<!--end of col-->
+						<div class="col">
+							<input class="form-control form-control-lg form-control-borderless" type="search"
+								placeholder="Search topics or keywords">
+						</div>
+						<!--end of col-->
+						<div class="col-auto">
+							<button class="btn btn-success" type="submit">Search</button>
+						</div>
+						<!--end of col-->
+					</div>
+				</form>
+				<!--end of col-->
+			</div>
+			<div class="col-sm-4">
+				<div class="btn-group float-right" role="group">
+					<button class="btn btn-success nav-button" type="button">
+						Store Locator
+					</button>
+					<button class="btn btn-success nav-button" type="button">
+						Signup
+					</button>
+					<button class="btn btn-success nav-button" type="button">
+						Cart
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="row next-day-delivery pl-5 ml-5 pr-5 mr-5" style="padding-bottom: 10px;">
+			<div="col-sm=12">
+				<div>
+					<label class="switch next-day-delivery-switch">
+						<input type="checkbox">
+						<span class="slider"></span>
+					</label>
+					Next Day Delivery
+				</div>
+		</div>
+		<div class="row hero ml-4 mr-4">
+			<div class="col-sm-9">
+				<div id="flex-rectangle-recproduct">
+					<div class="text-center">
+						<h2 class="text-white trendy-text" style="margin-top:0px">Featured Products</h2>
+						<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+							<!-- Carousel indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel" data-slide-to="1"></li>
+								<li data-target="#myCarousel" data-slide-to="2"></li>
+							</ol>
+							<!-- Wrapper for carousel items -->
+							<div class="carousel-inner">
+								<div class="item carousel-item active">
+									<div class="row">
+										<div class="col-sm-3">
+											<div class="thumb-wrapper">
+												<div class="img-box">
+													<img src="img/7grain.png" class="img-responsive img-fluid" alt="">
+												</div>
+												<div class="thumb-content">
+													<h4>Gardein 7 Grain Cripy Tender</h4>
+													<p class="item-price"><strike>$4.00</strike> <span>$2.50</span></p>
+													<div class="star-rating">
+														<ul class="list-inline">
+
+														</ul>
+													</div>
+													<a href="#" class="btn btn-success btn-block">Add to Cart</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-3">
+											<div class="thumb-wrapper">
+												<div class="img-box">
+													<img src="img/justrol.png" class="img-responsive img-fluid" alt="">
+												</div>
+												<div class="thumb-content">
+													<h4>Jus-Rol Pastry puff</h4>
+													<p class="item-price"><strike>$5.00</strike> <span>$2.50</span></p>
+													<div class="star-rating">
+														<ul class="list-inline">
+
+														</ul>
+													</div>
+													<a href="#" class="btn btn-success btn-block">Add to Cart</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-3">
+											<div class="thumb-wrapper">
+												<div class="img-box">
+													<img src="img/goodburger.png" class="img-responsive img-fluid"
+														alt="">
+												</div>
+												<div class="thumb-content">
+													<h4>Yves The Good Veggie Burger</h4>
+													<p class="item-price"><strike>$7.00</strike> <span>$2.50</span></p>
+													<div class="star-rating">
+														<ul class="list-inline">
+
+														</ul>
+													</div>
+													<a href="#" class="btn btn-success btn-block">Add to Cart</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-3">
+											<div class="thumb-wrapper">
+												<div class="img-box">
+													<img src="img/asset-4.png" class="img-responsive img-fluid" alt="">
+												</div>
+												<div class="thumb-content">
+													<h4>Annie's Vegan Pasta</h4>
+													<p class="item-price"><strike>$315.00</strike> <span>$250.00</span>
+													</p>
+													<div class="star-rating">
+														<ul class="list-inline">
+
+														</ul>
+													</div>
+													<a href="#" class="btn btn-success btn-block">Add to Cart</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Carousel controls -->
+								<a class="carousel-control left carousel-control-prev" href="#myCarousel"
+									data-slide="prev">
+									<i class="fa fa-angle-left"></i>
+								</a>
+								<a class="carousel-control right carousel-control-next" href="#myCarousel"
+									data-slide="next">
+									<i class="fa fa-angle-right"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div id="dday">
+					<img src="img/Group 48.png" class="img-fluid" alt="heroboard">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+					<!-- Carousel indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
+					<!-- Wrapper for carousel items -->
+					<div class="carousel-inner">
+						<div class="item carousel-item active">
+							<div class="row">
+								<div class="col-sm-3">
+									<div class="thumb-wrapper">
+										<div class="img-box">
+											<img src="img/7grain.png" class="img-responsive img-fluid" alt="">
+										</div>
+										<div class="thumb-content">
+											<h4>Gardein 7 Grain Cripy Tender</h4>
+											<p class="item-price"><strike>$4.00</strike> <span>$2.50</span></p>
+											<div class="star-rating">
+												<ul class="list-inline">
+													<li class="list-inline-item"><i class="fa fa-star"></i></li>
+													<li class="list-inline-item"><i class="fa fa-star"></i></li>
+													<li class="list-inline-item"><i class="fa fa-star"></i></li>
+													<li class="list-inline-item"><i class="fa fa-star"></i></li>
+													<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+												</ul>
+											</div>
+											<a href="#" class="btn btn-success btn-block">Add to Cart</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="thumb-wrapper">
+										<div class="img-box">
+											<img src="img/justrol.png" class="img-responsive img-fluid" alt="">
+										</div>
+										<div class="thumb-content">
+											<h4>Jus-Rol Pastry puff</h4>
+											<p class="item-price"><strike>$5.00</strike> <span>$2.50</span></p>
+											<div class="star-rating">
+												<ul class="list-inline">
+													<li class="list-inline-item"><i class="fa fa-star"></i></li>
+													<li class="list-inline-item"><i class="fa fa-star"></i></li>
+													<li class="list-inline-item"><i class="fa fa-star"></i></li>
+													<li class="list-inline-item"><i class="fa fa-star"></i></li>
+													<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+												</ul>
+											</div>
+											<a href="#" class="btn btn-success btn-block">Add to Cart</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="thumb-wrapper">
+										<div class="img-box">
+											<img src="img/goodburger.png" class="img-responsive img-fluid" alt="">
+										</div>
+										<div class="thumb-content">
+											<h4>Yves The Good Veggie Burger</h4>
+											<p class="item-price"><strike>$7.00</strike> <span>$2.50</span></p>
+											<div class="star-rating">
+												<ul class="list-inline">
+													<li class="list-inline-item"><i class="fa fa-star"></i></li>
+													<li class="list-inline-item"><i class="fa fa-star"></i></li>
+													<li class="list-inline-item"><i class="fa fa-star"></i></li>
+													<li class="list-inline-item"><i class="fa fa-star"></i></li>
+													<li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+												</ul>
+											</div>
+											<a href="#" class="btn btn-success btn-block">Add to Cart</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="thumb-wrapper">
+										<div class="img-box">
+											<img src="img/asset-4.png" class="img-responsive img-fluid" alt="">
+										</div>
+										<div class="thumb-content">
+											<h4>Annie's Vegan Pasta</h4>
+											<p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
+											<div class="star-rating">
+												<ul class="list-inline">
+													<li class="list-inline-item"><i class="fa fa-star"></i></li>
+													<li class="list-inline-item"><i class="fa fa-star"></i></li>
+													<li class="list-inline-item"><i class="fa fa-star"></i></li>
+													<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+													<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+												</ul>
+											</div>
+											<a href="#" class="btn btn-success btn-block">Add to Cart</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Carousel controls -->
+						<a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+							<i class="fa fa-angle-left"></i>
+						</a>
+						<a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row hero ml-4 mr-4">
+			<div class="col-sm-7">
+				<img src="img/fproduct banner.png" class="img-fluid" alt="heroboard">
+			</div>
+			<div class="col-sm-5">
+				<div id="dday">
+					<img src="img/Group 47.png" class="img-fluid" alt="heroboard">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+						<!-- Carousel indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+						</ol>
+						<!-- Wrapper for carousel items -->
+						<div class="carousel-inner">
+							<div class="item carousel-item active">
+								<div class="row">
+									<div class="col-sm-3">
+										<div class="thumb-wrapper">
+											<div class="img-box">
+												<img src="img/7grain.png" class="img-responsive img-fluid" alt="">
+											</div>
+											<div class="thumb-content">
+												<h4>Gardein 7 Grain Cripy Tender</h4>
+												<p class="item-price"><strike>$4.00</strike> <span>$2.50</span></p>
+												<div class="star-rating">
+													<ul class="list-inline">
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+													</ul>
+												</div>
+												<a href="#" class="btn btn-success btn-block">Add to Cart</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="thumb-wrapper">
+											<div class="img-box">
+												<img src="img/justrol.png" class="img-responsive img-fluid" alt="">
+											</div>
+											<div class="thumb-content">
+												<h4>Jus-Rol Pastry puff</h4>
+												<p class="item-price"><strike>$5.00</strike> <span>$2.50</span></p>
+												<div class="star-rating">
+													<ul class="list-inline">
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+													</ul>
+												</div>
+												<a href="#" class="btn btn-success btn-block">Add to Cart</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="thumb-wrapper">
+											<div class="img-box">
+												<img src="img/goodburger.png" class="img-responsive img-fluid" alt="">
+											</div>
+											<div class="thumb-content">
+												<h4>Yves The Good Veggie Burger</h4>
+												<p class="item-price"><strike>$7.00</strike> <span>$2.50</span></p>
+												<div class="star-rating">
+													<ul class="list-inline">
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star-half-o"></i>
+														</li>
+													</ul>
+												</div>
+												<a href="#" class="btn btn-success btn-block">Add to Cart</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="thumb-wrapper">
+											<div class="img-box">
+												<img src="img/asset-4.png" class="img-responsive img-fluid" alt="">
+											</div>
+											<div class="thumb-content">
+												<h4>Annie's Vegan Pasta</h4>
+												<p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
+												<div class="star-rating">
+													<ul class="list-inline">
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+														<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+													</ul>
+												</div>
+												<a href="#" class="btn btn-success btn-block">Add to Cart</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Carousel controls -->
+							<a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+								<i class="fa fa-angle-left"></i>
+							</a>
+							<a class="carousel-control right carousel-control-next" href="#myCarousel"
+								data-slide="next">
+								<i class="fa fa-angle-right"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row navbar nav-background ml-5 mr-5 mb-5 mt-5 pt-5 pb-5 mt-5">
+				<div class="col-sm-3">
+					<form>
+						<div class="row no-gutters align-items-left">
+							<div class="col">
+								<input class="form-control form-control-lg form-control-borderless" type="search"
+									placeholder="Sign up for a newsletter">
+							</div>
+							<div class="col-auto">
+								<button class="btn btn-success" type="submit">Sign Up</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-sm-5">
+					<img class="float-right" src="img/Group 1.png" alt="logo">
+				</div>
+				<div class="col-sm-4">
+					<div class="btn-group float-right" role="group">
+						<button class="btn btn-success nav-button" type="button">
+							Youtube
+						</button>
+						<button class="btn btn-success nav-button" type="button">
+							Pinterest
+						</button>
+						<button class="btn btn-success nav-button" type="button">
+							Facebook
+						</button>
+						<button class="btn btn-success nav-button" type="button">
+							Twitter
+						</button>
+						<button class="btn btn-success nav-button" type="button">
+							LinkedN
+						</button>
+					</div>
+				</div>
+			</div>
+			</div>
+
+			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+			<script src="js/jquery-3.3.1.min.js"></script>
+
+			<!-- Include all compiled plugins (below), or include individual files as needed -->
+			<script src="js/popper.min.js"></script>
+			<script src="js/bootstrap-4.3.1.js"></script>
+
 </body>
+
 </html>

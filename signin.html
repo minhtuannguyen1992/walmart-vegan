@@ -19,40 +19,56 @@
   <body>
   	<!-- body code goes here -->
       <div class="container">
-          
-            <div class="profile-sign-up">
-              <div class="col-sm">
-                    <img src="img/Walmart_Logos_Wordmark_blu_rgb.png" class="rounded mx-auto d-block" alt="logo">
+<div class="row">
+    <div class="col-sm-12"style="height: 100px"></div>
+</div>
+        <div class="row">
+          <div class="col-sm-4">
+          </div>
+              <div class="col-sm-4">
+                <div class="text-center">
+                    <img src="img/Walmart_Logos_Wordmark_blu_rgb.png" class="rounded center-block img-fluid" alt="logo">
+                    <h2 class="">sign in</h2>
               </div>
-              <form class="border border-light p-5">
-
-                    <p class="h4 mb-4 text-center">Sign in</p>
-                
-                    <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
-                
-                    <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
-                
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
-                                <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
-                            </div>
+              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+            <!--form-->
+            <div class="row">
+                <div class="col-sm-4">
+                  </div>
+              <div class="col-sm-4">
+                   
+                      <div class="control-group">
+                        <!-- Password-->
+                        <label class="control-label" for="password"></label>
+                        <div class="controls">
+                          <input type="password" id="password" name="password" placeholder="Email Address" class="input-xlarge">
                         </div>
-                        <div>
-                            <a href="">Forgot password?</a>
+                      </div>
+                   
+                      <div class="control-group">
+                        <!-- Password -->
+                        <label class="control-label"  for="password_confirm"></label>
+                        <div class="controls">
+                          <input type="password" id="password_confirm" name="password_confirm" placeholder="Password" class="input-xlarge">
                         </div>
+                      </div>
+                      <div class="row">
+                        <label class="checkbox checkbox-row">
+                        <input type="checkbox" value="remember-me"> Remember me
+                      </label>
+                   </div>
+                      <div class="control-group">
+                        <!-- Button -->
+                        <div class="controls">
+                          <button class="btn btn-success btn-block">Next</button>
+                        </div>
+                      </div>
                     </div>
-                
-                    <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
-                
-                    <div class="text-center">
-                        <p>Not a member?
-                            <a href="">Register</a>
-                        </p>
+                  <div class="col-sm-4">
                     </div>
-                </form>
-              
             </div>
           </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
