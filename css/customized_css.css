@@ -464,15 +464,3 @@ input{
 	}
 }
 /*shopping cart*/
-#button3 {
-    padding: 14px 50px;
-}
-#button31{
-    margin: auto;
-    width: 30%;
-    border-radius: 10px;
-    border: none;
-    padding: 14px 50px;
-    color: aliceblue;
-    text-align: center;
-}
