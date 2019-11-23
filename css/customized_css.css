@@ -409,7 +409,7 @@ input{
  }
 
 .shopping-cart .summary{
-	border-top: 2px solid #5ea4f3;
+	border-top: 2px solid #ffffff;
     background-color: #f7fbff;
     height: 100%;
     padding: 30px;
@@ -464,3 +464,15 @@ input{
 	}
 }
 /*shopping cart*/
+#button3 {
+    padding: 14px 50px;
+}
+#button31{
+    margin: auto;
+    width: 30%;
+    border-radius: 10px;
+    border: none;
+    padding: 14px 50px;
+    color: aliceblue;
+    text-align: center;
+}
