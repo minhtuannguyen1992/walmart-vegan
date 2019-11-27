@@ -1,10 +1,10 @@
 $(document).ready(function() {
 	$('.count').prop('disabled', true);
 	$(document).on('click', '.plus', function() {
-		$('.count').val(parseInt($('.cart-count').val()) + 1);
+		$('.cart-count').val(parseInt($('.cart-count').val()) + 1);
 	});
 	$(document).on('click', '.minus', function() {
-		$('.count').val(parseInt($('.cart-count').val()) - 1);
+		$('.cart-count').val(parseInt($('.cart-count').val()) - 1);
 		if ($('.count').val() == 0) {
 			$('.count').val(1);
 		}
