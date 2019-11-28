@@ -1,5 +1,26 @@
 
+.body{
+    padding-top: 1000px;
+}
+/*alert for adding product*/
+.myAlert-top{
+    position: fixed;
+    top: 5px; 
+    left:30%;
+    width: 50%;
+    background-color:rgb(3, 57, 16);
+    border:none;
+    color: white;
+}
+.alert{
+    display: none;
+    text-align: center;
+}
+/*alert for adding product*/
 /*nav bar*/
+.navbar{
+    z-index: 9999;
+}
 /*nav button color*/
 .btn-success {
     background-color: #6BBF80;

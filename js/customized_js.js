@@ -16,7 +16,9 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
 /*add to cart*/
+
 $(document).ready(function() {
 	$('.count').prop('disabled', true);
 	$(document).on('click', '.plus', function() {
@@ -29,6 +31,7 @@ $(document).ready(function() {
 		}
 	});
 });
+
 /*virtual aisle filter*/
 $(document).ready(function() {
 	$(".filter-button").click(function() {
@@ -54,3 +57,19 @@ $(".heart.fa").click(function() {
 	$(this).toggleClass("fa-heart fa-heart-o");
 });
 /*heart fav brand icon*/
+
+$(document).ready(function() {
+	$("#success-alert").hide();
+	$("#addcartsuccess").click(function showAlert() {
+	  $("#success-alert").fadeTo(2000, 500).slideUp(500, function() {
+		$("#success-alert").slideUp(500);
+	  });
+	});
+  });
+/*add product*/
+  function myAlertTop(){
+	$(".myAlert-top").show();
+	setTimeout(function(){
+	  $(".myAlert-top").hide(); 
+	}, 2000);
+  }

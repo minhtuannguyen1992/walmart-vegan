@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Untitled Document</title>
+	<title>Grocery Shopping</title>
 	<!-- Bootstrap -->
 	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -33,6 +33,10 @@
 				<img class="float-left img-fluid" src="img/logo.png" alt="logo">
 			</div>
 			<div class="col-sm-5">
+					<div class="myAlert-top alert alert-success">
+							<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+							<strong>Success!</strong> Product added to cart.
+						  </div>
 				<form>
 					<div class="row no-gutters align-items-center">
 						<!--end of col-->
@@ -63,6 +67,7 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="row next-day-delivery pl-5 ml-5 pr-5 mr-5" style="padding-bottom: 10px;">
 			<div class="col-sm-12">
 				<div>
@@ -74,6 +79,7 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="row">
 			<div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<h1 class="gallery-title pl-5 ml-5">The virtual aisle</h1>
@@ -140,6 +146,7 @@
 		</div>
 		<br>
 		<br>
+		
 		<div class="row" id="collapseExample1">
 			<div class="row">
 				<div class="col-md-3 col-sm-6">
@@ -164,18 +171,18 @@
 								$14.40
 								<span>$16.00</span>
 							</div>
-							<div class="add-to-cart plus" href="">ADD TO CART</div>
+							<div id="addcartsuccess" onclick="myAlertTop()" class="add-to-cart plus" href="">ADD TO CART</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<div class="product-grid4">
 						<div class="product-image4">
-								<div class=img-box>
-							<a href="#">
-								<img class="pic-1" src="img/Sour cream.png">
-								<img class="pic-2" src="img/Sour cream.png">
-							</a>
+							<div class=img-box>
+								<a href="#">
+									<img class="pic-1" src="img/Sour cream.png">
+									<img class="pic-2" src="img/Sour cream.png">
+								</a>
 							</div>
 							<ul class="social">
 								<li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
@@ -190,18 +197,18 @@
 								$17.60
 								<span>$20.00</span>
 							</div>
-							<div class="add-to-cart plus" href="">ADD TO CART</div>
+							<div class="add-to-cart plus"  onclick="myAlertTop()"href="">ADD TO CART</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<div class="product-grid4">
 						<div class="product-image4">
-								<div class=img-box>
-							<a href="#">
-								<img class="pic-1" src="img/amy veggie burger.jpg">
-								<img class="pic-2" src="img/amy veggie burger.jpg">
-							</a>
+							<div class=img-box>
+								<a href="#">
+									<img class="pic-1" src="img/amy veggie burger.jpg">
+									<img class="pic-2" src="img/amy veggie burger.jpg">
+								</a>
 							</div>
 							<ul class="social">
 								<li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
@@ -217,18 +224,18 @@
 								$14.40
 								<span>$16.00</span>
 							</div>
-							<div class="add-to-cart plus" href="">ADD TO CART</div>
+							<div class="add-to-cart plus" onclick="myAlertTop()" href="">ADD TO CART</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<div class="product-grid4">
 						<div class="product-image4">
-								<div class=img-box>
-							<a href="#">
-								<img class="pic-1" src="img/CoconutBliss.png">
-								<img class="pic-2" src="img/CoconutBliss.png">
-							</a>
+							<div class=img-box>
+								<a href="#">
+									<img class="pic-1" src="img/CoconutBliss.png">
+									<img class="pic-2" src="img/CoconutBliss.png">
+								</a>
 							</div>
 							<ul class="social">
 								<li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
@@ -244,7 +251,7 @@
 								$14.40
 								<span>$16.00</span>
 							</div>
-							<div class="add-to-cart plus" href="">ADD TO CART</div>
+							<div class="add-to-cart plus" onclick="myAlertTop()" href="">ADD TO CART</div>
 						</div>
 					</div>
 				</div>
