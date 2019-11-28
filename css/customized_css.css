@@ -1,5 +1,23 @@
 
 /*nav bar*/
+/*nav button color*/
+.btn-success {
+    background-color: #6BBF80;
+}
+
+/*nav button color*/
+.nav-button {
+    border: 0;
+}
+
+/*nav button color*/
+/*hamburger*/
+.hamburger {
+    max-width: 18%;
+    height: auto;
+}
+
+/*hamburger*/
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: fixed;
@@ -318,24 +336,7 @@ ul.dropdown-cart li .item-right button {
 }
 
 /*nav-background-color*/
-/*nav button color*/
-.btn-success {
-    background-color: #6BBF80;
-}
 
-/*nav button color*/
-.nav-button {
-    border: 0;
-}
-
-/*nav button color*/
-/*hamburger*/
-.hamburger {
-    max-width: 18%;
-    height: auto;
-}
-
-/*hamburger*/
 /*centre block*/
 .center-block {
     display: block;
