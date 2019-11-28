@@ -1,3 +1,4 @@
+/*add to cart*/
 $(document).ready(function() {
 	$('.count').prop('disabled', true);
 	$(document).on('click', '.plus', function() {
