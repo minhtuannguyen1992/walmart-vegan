@@ -857,7 +857,24 @@ input::-webkit-inner-spin-button {
 input:disabled{
     background-color:#16a085;
 }
+/*local specialty and deal of the day carousel*/
+.carousel .item .img-box {
+    height: 160px;
+    width: 100%;
+    position: relative;
+}
 
+.carousel .item img {
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+/*local specialty and deal of the day carousel*/
 /* Media Queries */
 @media (max-width: 620px) {
     .trendy-text {
