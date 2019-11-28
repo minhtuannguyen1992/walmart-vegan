@@ -53,9 +53,11 @@ $(document).ready(function() {
 });
 /*virtual aisle filter*/
 /*heart fav brand icon*/
-$(".heart.fa").click(function() {
-	$(this).toggleClass("fa-heart fa-heart-o");
-});
+$(document).ready(function(){
+	$(".wish-icon i").click(function(){
+		$(this).toggleClass("fa-heart fa-heart-o");
+	});
+});	
 /*heart fav brand icon*/
 
 $(document).ready(function() {
