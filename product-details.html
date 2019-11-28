@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Untitled Document</title>
+	<title>Product Details</title>
 	<!-- Bootstrap -->
 	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -27,12 +27,15 @@
 
 <body>
 	<!-- body code goes here -->
-	<div class="container-fluid">
-		<div class="row navbar nav-background mb-0 mt-5 pt-5 pb-3 pl-5 ml-5 pr-5 mr-5">
-			<div class="col-sm-3">
-				<img class="float-left img-fluid" src="img/logo.png" alt="logo">
+	<div id="navbar" class="row navbar sticky nav-background mb-0 mt-0 pt-0 pb-0 pl-0 ml-0 pr-0 mr-0">
+			<div class="col-sm-2">
+				<img class="float-left img-fluid" src="img/logo with white vegan.png" alt="logo">
 			</div>
 			<div class="col-sm-5">
+				<div class="myAlert-top alert alert-success">
+					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+					<strong>Success!</strong> Product added to cart.
+				</div>
 				<form>
 					<div class="row no-gutters align-items-center">
 						<!--end of col-->
@@ -57,22 +60,26 @@
 					<button class="btn btn-success nav-button" type="button">
 						Signup
 					</button>
-					<button class="btn btn-success nav-button" type="button">
-						Cart
+	
+					<button class=" btn btn-cart nav-button" type="button">
+						Cart <span class="badge"><input type="number" class="cart-count" value="2"></span>
 					</button>
 				</div>
 			</div>
 		</div>
-		<div class="row next-day-delivery pl-5 ml-5 pr-5 mr-5" style="padding-bottom: 10px;">
-			<div="col-sm=12">
-				<div>
-					<label class="switch next-day-delivery-switch">
-						<input type="checkbox">
-						<span class="slider"></span>
-					</label>
-					Next Day Delivery
+	
+		<div class="container-fluid">
+			<div class="row next-day-delivery pl-5 pt-5 ml-0 pr-5 mr-5" style="padding-bottom: 5px;">
+				<div class="col-sm-12">
+					<div>
+						<label class="switch next-day-delivery-switch">
+							<input type="checkbox">
+							<span class="slider"></span>
+						</label>
+						Next Day Delivery
+					</div>
 				</div>
-		</div>
+			</div>
 		<div class="row">
 			<div class="col-sm-5">
 				<div class="bread-crumb">
@@ -96,7 +103,7 @@
 					<div class="summary">
 						<article class="gallery-wrap">
 							<div class="img-big-wrap">
-								<div> <a href="#"><img src="img/asset-4.png"></a></div>
+								<div> <a href="#"><img class="img-fluid" src="img/lavida.jpeg"></a></div>
 							</div> <!-- slider-product.// -->
 						</article> <!-- gallery-wrap .end// -->
 					</div>
@@ -104,19 +111,17 @@
 				<aside class="col-sm-4">
 						<div class="summary">
 					<article class="card-body p-5">
-							<h3 class="title mb-3">Annie's organic vegan shell pasta and creamy sauce</h3>
+							<h3 class="title mb-3">La Vida Vegan Almond Chocolate Spread </h3>
 							<dl class="param param-feature">
 								<dt>Product ID:</dt>
 								<dd>12345611</dd>
 							</dl> <!-- item-property-hor .// -->
 							<dl class="param param-feature">
 								<dt>Ingredients:</dt>
-								<dd>ORGANIC PASTA (ORGANIC WHEAT FLOUR), ORGANIC VEGAN CHEDDAR FLAVOR SEASONING
-									(ORGANIC RICE SYRUP SOLIDS,
-									ORGANIC PALM OIL, SEA SALT, ORGANIC CORN STARCH, ORGANIC PEA PROTEIN, NATURAL
-									FLAVOR,
-									SUNFLOWER LECITHIN, LACTIC ACID,
-									ORGANIC ANNATTO EXTRACT [FOR COLOR], SILICON DIOXIDE [FOR ANTICAKING]).</dd>
+								<dd>Cane sugar*, sunflower oil*, low fat cocoa powder* 9%, 
+									chocolate* 5% (cane Sugar*, low fat cocoa powder*, cocoa butter*), 
+									rice syrup powder*, emulsifier: sunflower lecithin*, Bourbon vanilla powder*. 
+									* = verified organically grown</dd>
 							</dl> <!-- item-property-hor .// -->
 							<dl class="param param-feature">
 								<dt>Delivery</dt>
@@ -145,9 +150,9 @@
 							</div> <!-- row.// -->
 							<p class="price-detail-wrap">
 								<span class="price h3 text-warning">
-									<span class="currency">US $</span><span class="num">1299</span>
+									<span class="currency">US $</span><span class="num">20.00</span>
 								</span>
-								<span>/per kg</span>
+								<span>/Jar</span>
 							</p> <!-- price-detail-wrap .// -->
 							<div class="row">
 								<h2>IN STOCK!</h2>
@@ -155,13 +160,13 @@
 							<hr>
 							<div class="col-md-8 col-md-offset-2">
 							<div class="row">
-								<a href="#" class="btn btn-lg btn-success btn-block text-uppercase"> Add to cart </a>
+								<a id="addcartsuccess" onclick="myAlertTop()" style="color:white"class="btn btn-lg btn-success btn-block text-uppercase plus"> Add to cart </a>
 							</div>
 							<div class="row">
 								<p></p>
 							</div>
 							<div class="row">
-								<a href="#" class="btn btn-lg btn-success btn-block text-uppercase"> Check out </a>
+								<a href="shopping-cart.html" class="btn btn-lg btn-success btn-block text-uppercase"> Check out </a>
 							</div>
 							<div class="row">
 								<p></p>
@@ -223,7 +228,7 @@
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap-4.3.1.js"></script>
-
+	<script src="js/customized_js.js"></script>
 </body>
 
 </html>

@@ -27,44 +27,50 @@
 
 <body>
     <!-- body code goes here -->
-    <div class="container-fluid">
-        <div class="row navbar nav-background mb-0 mt-5 pt-5 pb-3 pl-5 ml-5 pr-5 mr-5">
-            <div class="col-sm-3">
-                <img class="float-left img-fluid" src="img/logo.png" alt="logo">
+    <div id="navbar" class="row navbar sticky nav-background mb-0 mt-0 pt-0 pb-0 pl-0 ml-0 pr-0 mr-0">
+        <div class="col-sm-2">
+            <img class="float-left img-fluid" src="img/logo with white vegan.png" alt="logo">
+        </div>
+        <div class="col-sm-5">
+            <div class="myAlert-top alert alert-success">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>Success!</strong> Product added to cart.
             </div>
-            <div class="col-sm-5">
-                <form>
-                    <div class="row no-gutters align-items-center">
-                        <!--end of col-->
-                        <div class="col">
-                            <input class="form-control form-control-lg form-control-borderless" type="search"
-                                placeholder="Search topics or keywords">
-                        </div>
-                        <!--end of col-->
-                        <div class="col-auto">
-                            <button class="btn btn-success" type="submit">Search</button>
-                        </div>
-                        <!--end of col-->
+            <form>
+                <div class="row no-gutters align-items-center">
+                    <!--end of col-->
+                    <div class="col">
+                        <input class="form-control form-control-lg form-control-borderless" type="search"
+                            placeholder="Search topics or keywords">
                     </div>
-                </form>
-                <!--end of col-->
-            </div>
-            <div class="col-sm-4">
-                <div class="btn-group float-right" role="group">
-                    <button class="btn btn-success nav-button" type="button">
-                        Store Locator
-                    </button>
-                    <button class="btn btn-success nav-button" type="button">
-                        Signup
-                    </button>
-                    <button class="btn btn-success nav-button" type="button">
-                        Cart
-                    </button>
+                    <!--end of col-->
+                    <div class="col-auto">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </div>
+                    <!--end of col-->
                 </div>
+            </form>
+            <!--end of col-->
+        </div>
+        <div class="col-sm-4">
+            <div class="btn-group float-right" role="group">
+                <button class="btn btn-success nav-button" type="button">
+                    Store Locator
+                </button>
+                <button class="btn btn-success nav-button" type="button">
+                    Account
+                </button>
+
+                <button class=" btn btn-cart nav-button" type="button">
+                    Cart <span class="badge"><input type="number" class="cart-count" value="3"></span>
+                </button>
             </div>
         </div>
-        <div class="row next-day-delivery pl-5 ml-5 pr-5 mr-5" style="padding-bottom: 10px;">
-            <div="col-sm=12">
+    </div>
+
+    <div class="container-fluid">
+        <div class="row next-day-delivery pl-5 pt-5 ml-0 pr-5 mr-5" style="padding-bottom: 5px;">
+            <div class="col-sm-12">
                 <div>
                     <label class="switch next-day-delivery-switch">
                         <input type="checkbox">
@@ -72,14 +78,15 @@
                     </label>
                     Next Day Delivery
                 </div>
+            </div>
         </div>
 
-                        <main class="page">
-                        <section class="shopping-cart dark">
-                    <div class="content">
-                        <div class="row">
-                            <div class="col-md-12 col-lg-8">
-                                <div class="summary">
+        <main class="page">
+            <section class="shopping-cart dark">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-8">
+                            <div class="summary">
                                 <div class="block-heading">
                                     <h2>Shopping Cart</h2>
                                 </div>
@@ -181,81 +188,81 @@
                                         </div>
                                     </div>
                                 </div>
-                                </div>
                             </div>
+                        </div>
 
-                            <div class="col-md-12 col-lg-4">
-                                <div class="summary">
-                                    <h2>Order Summary</h2>
-                                    <div class="summary-item"><span class="text">Subtotal</span><span
-                                            class="price">$360</span></div>
-                                    <div class="summary-item"><span class="text">Discount</span><span
-                                            class="price">$0</span></div>
-                                    <div class="summary-item"><span class="text">Shipping</span><span
-                                            class="price">$0</span></div>
-                                    <div class="summary-item"><span class="text">Total</span><span
-                                            class="price">$360</span></div>
-
-                                    <div class="row">
-                                        <P></P>
-                                    </div>
-                                    <div class="row">
-                                        <P></P>
-                                    </div>
-                                    <div class="row">
-                                        <P></P>
-                                    </div>
-                                    <div class="row">
-                                        <P></P>
-                                    </div>
-                                    <div class="row">
-                                        <P></P>
-                                    </div>
-                                    <button type="button" class="btn btn-success btn-lg btn-block">Checkout</button>
+                        <div class="col-md-12 col-lg-4">
+                            <div class="summary">
+                                <h2>Order Summary</h2>
+                                <div class="summary-item"><span class="text">Subtotal</span><span
+                                        class="price">$360</span></div>
+                                <div class="summary-item"><span class="text">Discount</span><span
+                                        class="price">$0</span></div>
+                                <div class="summary-item"><span class="text">Shipping</span><span
+                                        class="price">$0</span></div>
+                                <div class="summary-item"><span class="text">Total</span><span class="price">$360</span>
                                 </div>
+
+                                <div class="row">
+                                    <P></P>
+                                </div>
+                                <div class="row">
+                                    <P></P>
+                                </div>
+                                <div class="row">
+                                    <P></P>
+                                </div>
+                                <div class="row">
+                                    <P></P>
+                                </div>
+                                <div class="row">
+                                    <P></P>
+                                </div>
+                                <button type="button" class="btn btn-success btn-lg btn-block">Checkout</button>
                             </div>
                         </div>
                     </div>
-                </section>
-            </main>
-
-    <div class="row navbar nav-background ml-5 mr-5 mb-5 mt-5 pt-5 pb-5 mt-5">
-        <div class="col-sm-3">
-            <form>
-                <div class="row no-gutters align-items-left">
-                    <div class="col">
-                        <input class="form-control form-control-lg form-control-borderless" type="search"
-                            placeholder="Sign up for a newsletter">
-                    </div>
-                    <div class="col-auto">
-                        <button class="btn btn-success" type="submit">Sign Up</button>
-                    </div>
                 </div>
-            </form>
-        </div>
-        <div class="col-sm-5">
-            <img class="float-right" src="img/Group 1.png" alt="logo">
-        </div>
-        <div class="col-sm-4">
-            <div class="btn-group float-right" role="group">
-                <button class="btn btn-success nav-button" type="button">
-                    Youtube
-                </button>
-                <button class="btn btn-success nav-button" type="button">
-                    Pinterest
-                </button>
-                <button class="btn btn-success nav-button" type="button">
-                    Facebook
-                </button>
-                <button class="btn btn-success nav-button" type="button">
-                    Twitter
-                </button>
-                <button class="btn btn-success nav-button" type="button">
-                    LinkedN
-                </button>
+            </section>
+        </main>
+
+        <div class="row navbar nav-background ml-5 mr-5 mb-5 mt-5 pt-5 pb-5 mt-5">
+            <div class="col-sm-3">
+                <form>
+                    <div class="row no-gutters align-items-left">
+                        <div class="col">
+                            <input class="form-control form-control-lg form-control-borderless" type="search"
+                                placeholder="Sign up for a newsletter">
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-success" type="submit">Sign Up</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-5">
+                <img class="float-right" src="img/Group 1.png" alt="logo">
+            </div>
+            <div class="col-sm-4">
+                <div class="btn-group float-right" role="group">
+                    <button class="btn btn-success nav-button" type="button">
+                        Youtube
+                    </button>
+                    <button class="btn btn-success nav-button" type="button">
+                        Pinterest
+                    </button>
+                    <button class="btn btn-success nav-button" type="button">
+                        Facebook
+                    </button>
+                    <button class="btn btn-success nav-button" type="button">
+                        Twitter
+                    </button>
+                    <button class="btn btn-success nav-button" type="button">
+                        LinkedN
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.3.1.min.js"></script>
