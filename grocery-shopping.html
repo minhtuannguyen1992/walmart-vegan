@@ -27,48 +27,48 @@
 
 <body>
 	<!-- body code goes here -->
-	<div class="container-fluid">
-		<div id="navbar" class="row navbar sticky nav-background mb-0 mt-5 pt-5 pb-3 pl-5 ml-5 pr-5 mr-5">
-			<div class="col-sm-3">
-				<img class="float-left img-fluid" src="img/logo.png" alt="logo">
+	<div id="navbar" class="row navbar sticky nav-background mb-0 mt-0 pt-0 pb-0 pl-0 ml-0 pr-0 mr-0">
+		<div class="col-sm-3">
+			<img class="float-left img-fluid" src="img/logo.png" alt="logo">
+		</div>
+		<div class="col-sm-5">
+			<div class="myAlert-top alert alert-success">
+				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+				<strong>Success!</strong> Product added to cart.
 			</div>
-			<div class="col-sm-5">
-					<div class="myAlert-top alert alert-success">
-							<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-							<strong>Success!</strong> Product added to cart.
-						  </div>
-				<form>
-					<div class="row no-gutters align-items-center">
-						<!--end of col-->
-						<div class="col">
-							<input class="form-control form-control-lg form-control-borderless" type="search"
-								placeholder="Search topics or keywords">
-						</div>
-						<!--end of col-->
-						<div class="col-auto">
-							<button class="btn btn-success" type="submit">Search</button>
-						</div>
-						<!--end of col-->
+			<form>
+				<div class="row no-gutters align-items-center">
+					<!--end of col-->
+					<div class="col">
+						<input class="form-control form-control-lg form-control-borderless" type="search"
+							placeholder="Search topics or keywords">
 					</div>
-				</form>
-				<!--end of col-->
-			</div>
-			<div class="col-sm-4">
-				<div class="btn-group float-right" role="group">
-					<button class="btn btn-success nav-button" type="button">
-						Store Locator
-					</button>
-					<button class="btn btn-success nav-button" type="button">
-						Signup
-					</button>
-					<button class="btn btn-cart nav-button" type="button">
-						Cart <span class="badge"><input type="number" class="cart-count" value="0"></span>
-					</button>
+					<!--end of col-->
+					<div class="col-auto">
+						<button class="btn btn-success" type="submit">Search</button>
+					</div>
+					<!--end of col-->
 				</div>
+			</form>
+			<!--end of col-->
+		</div>
+		<div class="col-sm-4">
+			<div class="btn-group float-right" role="group">
+				<button class="btn btn-success nav-button" type="button">
+					Store Locator
+				</button>
+				<button class="btn btn-success nav-button" type="button">
+					Signup
+				</button>
+				<button class="btn btn-cart nav-button" type="button">
+					Cart <span class="badge"><input type="number" class="cart-count" value="0"></span>
+				</button>
 			</div>
 		</div>
+	</div>
 
-		<div class="row next-day-delivery pl-5 ml-5 pr-5 mr-5" style="padding-bottom: 10px;">
+	<div class="container-fluid">
+		<div class="row next-day-delivery pl-5 ml-0 pr-5 mr-5" style="padding-bottom: 5px;">
 			<div class="col-sm-12">
 				<div>
 					<label class="switch next-day-delivery-switch">
@@ -79,7 +79,6 @@
 				</div>
 			</div>
 		</div>
-
 		<div class="row">
 			<div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<h1 class="gallery-title pl-5 ml-5">The virtual aisle</h1>
@@ -146,7 +145,7 @@
 		</div>
 		<br>
 		<br>
-		
+
 		<div class="row" id="collapseExample1">
 			<div class="row">
 				<div class="col-md-3 col-sm-6">
@@ -171,7 +170,8 @@
 								$14.40
 								<span>$16.00</span>
 							</div>
-							<div id="addcartsuccess" onclick="myAlertTop()" class="add-to-cart plus" href="">ADD TO CART</div>
+							<div id="addcartsuccess" onclick="myAlertTop()" class="add-to-cart plus" href="">ADD TO CART
+							</div>
 						</div>
 					</div>
 				</div>
@@ -197,7 +197,7 @@
 								$17.60
 								<span>$20.00</span>
 							</div>
-							<div class="add-to-cart plus"  onclick="myAlertTop()"href="">ADD TO CART</div>
+							<div class="add-to-cart plus" onclick="myAlertTop()" href="">ADD TO CART</div>
 						</div>
 					</div>
 				</div>
