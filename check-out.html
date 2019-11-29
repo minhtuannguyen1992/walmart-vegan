@@ -554,7 +554,7 @@
                                     <br />
                                     <br />
                                     <br />
-                                    <button type="submit" class="btn btn-success btn-lg" style="width:100%;">Place Order
+                                    <button type="submit" onclick=checkZipCode() class="btn btn-success btn-lg" style="width:100%;">Place Order
                                     </button>
                                     <br />
                                     <div style="text-align: left;"><br />
@@ -570,7 +570,10 @@
                 </div>
             </div>
         </div>
-
+        <div class="myAlert-bottom alert alert-danger">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+          </div>
     </div>
 
     <div class="row navbar nav-background ml-5 mr-5 mb-5 mt-5 pt-5 pb-5 mt-5">
@@ -619,7 +622,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap-4.3.1.js"></script>
-
+    <script src="js/customized_js.js"></script>
 </body>
 
 </html>

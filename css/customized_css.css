@@ -12,6 +12,12 @@
     border:none;
     color: white;
 }
+.myAlert-bottom{
+    position: fixed;
+    bottom: 5px;
+    left:2%;
+    width: 96%;
+}
 .alert{
     display: none;
     text-align: center;

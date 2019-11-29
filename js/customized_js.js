@@ -75,3 +75,37 @@ $(document).ready(function() {
 	  $(".myAlert-top").hide(); 
 	}, 2000);
   }
+
+  //go to sign in page
+  function getBasePath(){
+	 let fullPath = window.location.href;
+	 //console.log(fullPath)
+ 	let pathLength = fullPath.length;
+ 	while (fullPath.charAt(pathLength) != '/'){
+		pathLength--;
+ 	}
+	pathLength++;
+	let basePath = fullPath.substring(0,pathLength);
+	//console.log(basePath)
+	return basePath;
+  }
+
+ function getToProfilePage() {
+	let newPage = 'profile.html';
+	let basePath = getBasePath();
+	let newPath = basePath+newPage;
+	//console.log(newPath)
+ 	window.location.assign(newPath);
+  }
+//checkZipcode
+function checkZipCode(){
+let zipcode =document.getElementById('id_postalcode').value;
+	if (zipcode.length !=5){
+
+
+$(".myAlert-bottom").show();
+  setTimeout(function(){
+    $(".myAlert-bottom").hide(); 
+  }, 2000);
+}
+}
