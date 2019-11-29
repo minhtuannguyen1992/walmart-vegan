@@ -75,3 +75,56 @@ $(document).ready(function() {
 	  $(".myAlert-top").hide(); 
 	}, 2000);
   }
+
+function getCurrentPath() {
+	console.log(window.location.href);
+}
+
+function getBasePath() {
+
+	let fullPath = window.location.href;
+	let pathLength = fullPath.length;
+
+	while (fullPath.charAt(pathLength) != '/') {
+		pathLength--;
+	}
+	pathLength++;
+
+	let basePath = fullPath.substring(0, pathLength);
+	console.log(basePath);
+
+	return basePath;
+}
+
+
+function switchToGroceryShoppingPage() {
+
+	let newPage = 'grocery-shopping.html';
+
+	let basePath = getBasePath();
+	let newPath = basePath + newPage;
+
+	window.location.assign(newPath);
+}
+
+function switchToSignInPage() {
+
+	let newPage = 'signin.html';
+
+	let basePath = getBasePath();
+	let newPath = basePath + newPage;
+
+	window.location.assign(newPath);
+
+}
+
+function switchToShoppingCartPage() {
+
+	let newPage = 'shopping-cart.html';
+
+	let basePath = getBasePath();
+	let newPath = basePath + newPage;
+
+	window.location.assign(newPath);
+
+}
