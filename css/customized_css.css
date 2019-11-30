@@ -1,4 +1,4 @@
-
+.body{ padding-top: 1000px;}
 .container-fluid{
     padding-top: 70px;
 }
@@ -111,7 +111,7 @@ input:checked+.slider {
 /*flex rectangle*/
 .flex-rectangle {
     width: 25%;
-    background: #E5A743;
+    background: #E99C3E;
 }
 
 .flex-rectangle:before {
@@ -119,9 +119,11 @@ input:checked+.slider {
 }
 
 .flex-rectangle-trendy {
-    background: #E5A743;
+    background: #E99C3E;
     display: inline-block;
     margin: 30px 0;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
 
 .trendy-text {
@@ -608,7 +610,12 @@ input {
     height: 100%;
     padding: 30px;
 }
-
+#collapseExample2 {
+    border-top: 2px solid #ffffff;
+    background-color: #b0edb5;
+    height: 100%;
+    padding: 0px;
+}
 /*carousel background*/
 
 
