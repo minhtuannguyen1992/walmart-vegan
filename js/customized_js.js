@@ -97,6 +97,13 @@ $(document).ready(function() {
 	//console.log(newPath)
  	window.location.assign(newPath);
   }
+  function getToAccountVerifiedPage() {
+	let newPage1 = 'account-verification.html';
+	let basePath = getBasePath();
+	let newPath = basePath+newPage1;
+	//console.log(newPath)
+ 	window.location.assign(newPath);
+  }
 //checkZipcode
 function checkZipCode(){
 let zipcode =document.getElementById('id_postalcode').value;
@@ -109,3 +116,5 @@ $(".myAlert-bottom").show();
   }, 2000);
 }
 }
+
+
