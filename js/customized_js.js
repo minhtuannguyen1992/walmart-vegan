@@ -97,10 +97,24 @@ $(document).ready(function() {
 	//console.log(newPath)
  	window.location.assign(newPath);
   }
-  function getToAccountVerifiedPage() {
-	let newPage1 = 'account-verification.html';
+  function getToSignInPage() {
+	let newPage = 'signin.html';
 	let basePath = getBasePath();
-	let newPath = basePath+newPage1;
+	let newPath = basePath+newPage;
+	//console.log(newPath)
+ 	window.location.assign(newPath);
+  }
+  function getToLogInPage() {
+	let newPage = 'index signed in.html';
+	let basePath = getBasePath();
+	let newPath = basePath+newPage;
+	//console.log(newPath)
+ 	window.location.assign(newPath);
+  }
+  function getToGroceryShopPage() {
+	let newPage = 'grocery-shopping.html';
+	let basePath = getBasePath();
+	let newPath = basePath+newPage;
 	//console.log(newPath)
  	window.location.assign(newPath);
   }
