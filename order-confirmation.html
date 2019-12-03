@@ -14,12 +14,10 @@
 	<!--ecommerce carousel-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 	<!--navbar cart drop down-->
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
 	<!--customized-->
 	<link href="css/customized_css.css" rel="stylesheet">
 
@@ -27,97 +25,136 @@
 
 <body>
 	<!-- body code goes here -->
-	<div class="container-fluid">
-		<div class="row navbar nav-background mb-0 mt-5 pt-5 pb-3 pl-5 ml-5 pr-5 mr-5">
-			<div class="col-sm-3">
-				<img class="float-left img-fluid" src="img/logo.png" alt="logo">
-			</div>
-			<div class="col-sm-5">
-				<form>
-					<div class="row no-gutters align-items-center">
-						<!--end of col-->
-						<div class="col">
-							<input class="form-control form-control-lg form-control-borderless" type="search"
-								placeholder="Search topics or keywords">
-						</div>
-						<!--end of col-->
-						<div class="col-auto">
-							<button class="btn btn-success" type="submit">Search</button>
-						</div>
-						<!--end of col-->
-					</div>
-				</form>
-				<!--end of col-->
-			</div>
-			<div class="col-sm-4">
-				<div class="btn-group float-right" role="group">
-					<button class="btn btn-success nav-button" type="button">
-						Store Locator
-					</button>
-					<button class="btn btn-success nav-button" type="button">
-						Signup
-					</button>
-					<button class="btn btn-success nav-button" type="button">
-						Cart
-					</button>
-				</div>
-			</div>
+	<div id="navbar" class="row navbar sticky nav-background mb-0 mt-0 pt-0 pb-0 pl-0 ml-0 pr-0 mr-0">
+		<div class="col-sm-2">
+			<img class="float-left img-fluid" src="img/logo with white vegan.png" alt="logo">
 		</div>
-
-        <div class="jumbotron text-center">
-			<h1 class="display-3">Thank You!</h1>
-			<h2> order Confirmation</h2>
-            <p class="lead"><strong>Please check your email</strong> for further instructions on how to complete your account setup.</p>
-            <hr>
-
-            <p class="lead">
-              <a class="btn btn-primary btn-sm" href="#" role="button">Continue to homepage</a>
-            </p>
-          </div>
-		<div class="row navbar nav-background ml-5 mr-5 mb-5 mt-5 pt-5 pb-5 mt-5">
-			<div class="col-sm-3">
-				<form>
-					<div class="row no-gutters align-items-left">
-						<div class="col">
-							<input class="form-control form-control-lg form-control-borderless" type="search"
-								placeholder="Sign up for a newsletter">
-						</div>
-						<div class="col-auto">
-							<button class="btn btn-success" type="submit">Sign Up</button>
-						</div>
+		<div class="col-sm-5">
+			<div class="myAlert-top alert alert-success">
+				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+				<strong>Success!</strong> Product added to cart.
+			</div>
+			<form>
+				<div class="row no-gutters align-items-center">
+					<!--end of col-->
+					<div class="col">
+						<input class="form-control form-control-lg form-control-borderless" type="search"
+							placeholder="Search topics or keywords">
 					</div>
-				</form>
-			</div>
-			<div class="col-sm-5">
-				<img class="float-right" src="img/Group 1.png" alt="logo">
-			</div>
-			<div class="col-sm-4">
-				<div class="btn-group float-right" role="group">
-					<button class="btn btn-success nav-button" type="button">
-						Youtube
-					</button>
-					<button class="btn btn-success nav-button" type="button">
-						Pinterest
-					</button>
-					<button class="btn btn-success nav-button" type="button">
-						Facebook
-					</button>
-					<button class="btn btn-success nav-button" type="button">
-						Twitter
-					</button>
-					<button class="btn btn-success nav-button" type="button">
-						LinkedN
-					</button>
+					<!--end of col-->
+					<div class="col-auto">
+						<button class="btn btn-success" type="submit">Search</button>
+					</div>
+					<!--end of col-->
 				</div>
+			</form>
+			<!--end of col-->
+		</div>
+		<div class="col-sm-4">
+			<div class="btn-group float-right" role="group">
+				<button class="btn btn-success nav-button" type="button">
+					Store Locator
+				</button>
+				<button class="btn btn-success nav-button" type="button">
+					Signup
+				</button>
+
+				<button class=" btn btn-cart nav-button" type="button">
+					Cart <span class="badge"><input type="number" class="cart-count" value="2"></span>
+				</button>
 			</div>
 		</div>
 	</div>
+	<br>
+	<br>
+	<div class="container-fluid">
+		<div class="jumbotron text-center">
+			<h1 class="display-3">Thank You!</h1>
+			<h2> order Confirmation</h2>
+			<p class="lead"><strong>Your order has been sent to your registered email.</strong> </p>
+			<hr>
+
+			<p class="lead">
+				<a class="btn btn-success btn-lg" href="index signed in.html" role="button">Back to homepage</a>
+			</p>
+		</div>
+	</div>
+	<footer class="footer">å
+		<div class="container bottom_border">
+			<div class="row">
+				<div class=" col-sm-4 col-md col-sm-4  col-12 col">
+					<h5 class="headin5_amrc col_white_amrc pt2">Our Story</h5>
+					<!--headin5_amrc-->
+					<p class="mb10">Walamart Vegan is the start of Walmart to get in touch as well as support our
+						community. We would like to let our customer know that we care and we listen.</p>
+					<p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
+					<p><i class="fa fa-phone"></i> +91-9999878398 </p>
+					<p><i class="fa fa fa-envelope"></i> info@example.com </p>
+
+
+				</div>
+
+
+				<div class=" col-sm-4 col-md  col-6 col">
+					<h5 class="headin5_amrc col_white_amrc pt2">Our Services</h5>
+					<!--headin5_amrc-->
+					<ul class="footer_ul_amrc">
+						<li><a href="http://webenlance.com">Image Rectoucing</a></li>
+						<li><a href="http://webenlance.com">Clipping Path</a></li>
+						<li><a href="http://webenlance.com">Hollow Man Montage</a></li>
+						<li><a href="http://webenlance.com">Ebay & Amazon</a></li>
+						<li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
+						<li><a href="http://webenlance.com">Image Cropping</a></li>
+					</ul>
+					<!--footer_ul_amrc ends here-->
+				</div>
+
+
+				<div class=" col-sm-4 col-md  col-6 col">
+					<h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+					<!--headin5_amrc-->
+					<ul class="footer_ul_amrc">
+						<li><a href="http://webenlance.com">Local Specialty</a></li>
+						<li><a href="http://webenlance.com">Furniture</a></li>
+						<li><a href="http://webenlance.com">Holiday Gift</a></li>
+						<li><a href="http://webenlance.com">Home</a></li>
+						<li><a href="http://webenlance.com">Grocery Shopping</a></li>
+						<li><a href="http://webenlance.com">Next Day Delivery</a></li>
+					</ul>
+					<!--footer_ul_amrc ends here-->
+				</div>
+
+			</div>
+		</div>
+
+
+		<div class="container">
+			<ul class="foote_bottom_ul_amrc">
+				<li><a href="http://webenlance.com">Home</a></li>
+				<li><a href="http://webenlance.com">Account</a></li>
+				<li><a href="http://webenlance.com">Services</a></li>
+				<li><a href="http://webenlance.com">Careers</a></li>
+				<li><a href="http://webenlance.com">Grocery Shop</a></li>
+				<li><a href="http://webenlance.com">Contact</a></li>
+			</ul>
+			<!--foote_bottom_ul_amrc ends here-->
+			<p class="text-center">Copyright @2019 | Designed With by <a href="#">MWin</a></p>
+
+			<!--social_footer_ul ends here-->
+		</div>
+
+	</footer>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="js/jquery-3.3.1.min.js"></script>
 
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap-4.3.1.js"></script>
+	<script src="js/customized_js.js"></script>
 
 </body>
 
