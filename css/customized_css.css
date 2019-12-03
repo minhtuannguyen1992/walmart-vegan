@@ -629,18 +629,19 @@ input {
 .btn-cart {
     color: #fff !important;
     height: 32px;
+    text-align: center !important;
     border-radius: 30px !important;
-    background: #E5A743;
+    background: #42B32F;
 }
 
 .btn-cart:hover {
     color: #fff;
-    background-color: #449d44;
+    background-color: #007000;
     border-color: #398439;
 }
 
 .btn-cart .cart-count {
-    background: #007000;
+    background: #42B32F;
     border: none;
     border-radius: 100%;
     text-align: center;

@@ -118,6 +118,20 @@ $(document).ready(function() {
 	//console.log(newPath)
  	window.location.assign(newPath);
   }
+  function getToCheckOutPage() {
+	let newPage = 'check-out.html';
+	let basePath = getBasePath();
+	let newPath = basePath+newPage;
+	//console.log(newPath)
+ 	window.location.assign(newPath);
+  }
+  function getToConfirmationPage() {
+	let newPage = 'order-confirmation.html';
+	let basePath = getBasePath();
+	let newPath = basePath+newPage;
+	//console.log(newPath)
+ 	window.location.assign(newPath);
+  }
 //checkZipcode
 function checkZipCode(){
 let zipcode =document.getElementById('id_postalcode').value;
