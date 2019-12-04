@@ -838,4 +838,14 @@ footer p { font-size:13px; color:#fff; padding-bottom:0px; margin-bottom:8px;}
         .no-space-pt-xs, .no-padding-xs{
             padding: 0;
         }
+        .gallery-title{
+            padding-top: 50px;
+        }
+        .bread-crumb{
+            padding-top:50px;
+        }
+        .card-img-xs{
+            padding-left:20px;
+        }
     }
+    
