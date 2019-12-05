@@ -552,6 +552,9 @@ input {
 
 /*add favorite icon*/
 /*virtual aisle*/
+.round-shape{
+    border-radius: 50%;
+}
 .gallery-title {
     font-size: 36px;
     color: #42B32F;
