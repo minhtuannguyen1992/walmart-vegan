@@ -73,7 +73,7 @@
         <div pt-5 id="collapseExample2">
         <div class="row next-day-delivery pl-5 pt-5 ml-0 pr-5 mr-5" style="padding-bottom: 5px;">
             <div class="col-sm-12">
-                <div>
+                <div class="text-white">
                     <label class="switch next-day-delivery-switch">
                         <input type="checkbox">
                         <span class="slider"></span>
@@ -83,6 +83,10 @@
             </div>
         </div>
     </div>
+    <div class="myAlert-bottom alert alert-danger">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Invalid! </strong>  Zipcode needs to be 5 numbers
+          </div>
     <div class="container-fluid">
         <div class='row'>
             <div class='col-md-8'>
@@ -341,7 +345,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td style="width: 175px;">
-                                                        <label for="id_postalcode">Postalcode:</label></td>
+                                                        <label for="id_postalcode">Zipcode:</label></td>
                                                     <td>
                                                         <input class="form-control" id="id_postalcode" name="postalcode"
                                                             required="required" type="text" />
@@ -464,7 +468,7 @@
                                 <div class="summary">
                                     <h2>Order Summary</h2>
                                     <div class="summary-item"><span class="text">Subtotal</span><span
-                                            class="price">$360</span>
+                                            class="price">$25.50</span>
                                     </div>
                                     <div class="summary-item"><span class="text">Discount</span><span
                                             class="price">$0</span>
@@ -473,7 +477,7 @@
                                             class="price">$0</span>
                                     </div>
                                     <div class="summary-item"><span class="text">Total</span><span
-                                            class="price">$360</span>
+                                            class="price">$25.50</span>
                                     </div>
                                     <br />
                                     <br />
@@ -495,10 +499,7 @@
                 </div>
             </div>
         </div>
-        <div class="myAlert-bottom alert alert-danger">
-            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-            <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
-          </div>
+
     </div>
     </div>
     </div>
